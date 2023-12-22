@@ -2,20 +2,12 @@
 
 declare(strict_types=1);
 
-namespace ApiClients\Tools\OpenApiClientGenerator;
+namespace OpenAPITools\Configuration;
 
-use ApiClients\Tools\OpenApiClientGenerator\State\Files as StateFiles;
-use EventSauce\ObjectHydrator\MapFrom;
-
-final class State
+final readonly class State
 {
     public function __construct(
-        #[MapFrom('specHash')]
-        public string $specHash,
-        #[MapFrom('generatedFiles')]
-        public StateFiles $generatedFiles,
-        #[MapFrom('additionalFiles')]
-        public StateFiles $additionalFiles,
+        public string $file,
     ) {
     }
 }

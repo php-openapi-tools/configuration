@@ -1,2 +1,2 @@
-# openapi-client-generator
-OpenAPI client generator
+# configuration
+Configuration for package generators
