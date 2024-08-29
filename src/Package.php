@@ -6,6 +6,7 @@ namespace OpenAPITools\Configuration;
 
 use EventSauce\ObjectHydrator\MapFrom;
 use OpenAPITools\Configuration\Package\Destination;
+use OpenAPITools\Configuration\Package\Metadata;
 use OpenAPITools\Configuration\Package\QA;
 use OpenAPITools\Configuration\Package\State;
 use OpenAPITools\Configuration\Package\Templates;
@@ -16,6 +17,7 @@ final readonly class Package implements Contract\Package
 {
     /** @param array<Contract\FileGenerator> $generators */
     public function __construct(
+        public Metadata $metadata,
         public string $vendor,
         public string $name,
         public string|null $repository,
