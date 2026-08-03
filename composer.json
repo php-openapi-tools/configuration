@@ -9,15 +9,16 @@
         }
     ],
     "require": {
-        "php": "^8.2",
-        "eventsauce/object-hydrator": "^1.4",
-        "jawira/case-converter": "^3.5",
+        "php": "^8.4",
+        "eventsauce/object-hydrator": "^1.8.0",
+        "jawira/case-converter": "^3.6.0",
         "openapi-tools/contract": "dev-main",
         "openapi-tools/representation": "dev-main",
         "openapi-tools/utils": "dev-main"
     },
     "require-dev": {
-        "wyrihaximus/test-utilities": "^5.6"
+        "wyrihaximus/async-test-utilities": "^13.5.1",
+        "wyrihaximus/makefiles": "^0.13.3"
     },
     "autoload": {
         "psr-4": {
@@ -31,21 +32,31 @@
     },
     "config": {
         "allow-plugins": {
+            "composer/package-versions-deprecated": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupol/composer-packages": true,
             "ergebnis/composer-normalize": true,
+            "icanhazstring/composer-unused": true,
             "infection/extension-installer": true,
-            "wyrihaximus/composer-update-bin-autoload-path": true
+            "mindplay/composer-locator": true,
+            "phpstan/extension-installer": true,
+            "wyrihaximus/composer-update-bin-autoload-path": true,
+            "wyrihaximus/makefiles": true,
+            "wyrihaximus/test-utilities": true
         },
         "platform": {
-            "php": "8.2.13"
-        }
+            "php": "8.4.13"
+        },
+        "sort-packages": true
     },
     "scripts": {
         "post-install-cmd": [
-            "composer normalize"
+            "composer normalize",
+            "make on-install-or-update || true"
         ],
         "post-update-cmd": [
-            "composer normalize"
+            "composer normalize",
+            "make on-install-or-update || true"
         ]
     }
 }

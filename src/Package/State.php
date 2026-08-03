@@ -10,7 +10,7 @@ use OpenAPITools\Contract;
 
 final readonly class State implements Contract\Package\State
 {
-    /** @param array<string> $additionalFiles */
+    /** @param array<string>|null $additionalFiles */
     public function __construct(
         #[MapFrom('additionalFiles')]
         #[CastListToType('string')]
