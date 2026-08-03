@@ -1,2 +1,17 @@
-includes:
-	- ../../vendor/wyrihaximus/test-utilities/rules.neon
+parameters:
+	level: max
+	paths:
+		- ../../etc
+		- ../../src
+		- ../../tests
+	ergebnis:
+		noParameterWithNullableTypeDeclaration:
+			enabled: false
+	shipmonkDeadCode:
+		detect:
+			deadMethods: false
+			deadProperties:
+				neverRead: false
+				neverWritten: false
+	ignoreErrors:
+		- '#Property OpenAPITools\\Configuration\\ListOfPackages::\$[a-zA-Z]+ is never read, only written\.#'

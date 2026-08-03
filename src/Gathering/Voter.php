@@ -10,8 +10,8 @@ use OpenAPITools\Contract\Voter as VoterContract;
 final readonly class Voter
 {
     /**
-     * @param array<class-string<VoterContract\ListOperation>>|null   $listOperation
-     * @param array<class-string<VoterContract\StreamOperation>>|null $streamOperation
+     * @param array<class-string<VoterContract\ListOperation>>|null $listOperation
+     * @param array<int, string>|null                               $streamOperation
      */
     public function __construct(
         #[MapFrom('listOperation')]
