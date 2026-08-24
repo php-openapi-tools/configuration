@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ab0cd8eb614502078ed4b34824c9111",
+    "content-hash": "1c10399b56b3e6ce1d1cbaed8aa3f6b0",
     "packages": [
         {
             "name": "devizzent/cebe-php-openapi",
@@ -213,19 +213,20 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "6.10.0",
+            "version": "6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jsonrainbow/json-schema.git",
-                "reference": "8b1308a9d7bdbdb20ce87ef920f82b4564bb2d33"
+                "reference": "7e420a943a6fbc95e60e3cf67acfbee85b3b4da7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/8b1308a9d7bdbdb20ce87ef920f82b4564bb2d33",
-                "reference": "8b1308a9d7bdbdb20ce87ef920f82b4564bb2d33",
+                "url": "https://api.github.com/repos/jsonrainbow/json-schema/zipball/7e420a943a6fbc95e60e3cf67acfbee85b3b4da7",
+                "reference": "7e420a943a6fbc95e60e3cf67acfbee85b3b4da7",
                 "shasum": ""
             },
             "require": {
+                "ext-filter": "*",
                 "ext-json": "*",
                 "marc-mabe/php-enum": "^4.4",
                 "php": "^7.2 || ^8.0"
@@ -258,20 +259,9 @@
             ],
             "authors": [
                 {
-                    "name": "Bruno Prieto Reis",
-                    "email": "bruno.p.reis@gmail.com"
-                },
-                {
-                    "name": "Justin Rainbow",
-                    "email": "justin.rainbow@gmail.com"
-                },
-                {
-                    "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch"
-                },
-                {
-                    "name": "Robert Schönthal",
-                    "email": "seroscho@googlemail.com"
+                    "name": "Danny van der Sluijs",
+                    "email": "danny.vandersluijs@icloud.com",
+                    "role": "Maintainer"
                 }
             ],
             "description": "A library to validate a json schema.",
@@ -282,9 +272,9 @@
             ],
             "support": {
                 "issues": "https://github.com/jsonrainbow/json-schema/issues",
-                "source": "https://github.com/jsonrainbow/json-schema/tree/6.10.0"
+                "source": "https://github.com/jsonrainbow/json-schema/tree/6.11.0"
             },
-            "time": "2026-06-16T20:50:26+00:00"
+            "time": "2026-08-21T10:30:42+00:00"
         },
         {
             "name": "marc-mabe/php-enum",
@@ -418,29 +408,29 @@
         },
         {
             "name": "openapi-tools/contract",
-            "version": "dev-main",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-openapi-tools/contract.git",
-                "reference": "0cb65a40651a645259d0b49b0ab715f5473ba439"
+                "reference": "02377cb7dd26d7ec2909cfa42d0478effc6701f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-openapi-tools/contract/zipball/0cb65a40651a645259d0b49b0ab715f5473ba439",
-                "reference": "0cb65a40651a645259d0b49b0ab715f5473ba439",
+                "url": "https://api.github.com/repos/php-openapi-tools/contract/zipball/02377cb7dd26d7ec2909cfa42d0478effc6701f4",
+                "reference": "02377cb7dd26d7ec2909cfa42d0478effc6701f4",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^5.0",
-                "openapi-tools/representation": "dev-main",
-                "openapi-tools/utils": "dev-main",
-                "php": "^8.4"
+                "openapi-tools/representation": "^0.1.0",
+                "openapi-tools/utils": "^0.1.0",
+                "php": "^8.4",
+                "psr/http-message": "^1 || ^2 || ^3"
             },
             "require-dev": {
-                "wyrihaximus/async-test-utilities": "^13.5.0",
+                "wyrihaximus/async-test-utilities": "^13.5.1",
                 "wyrihaximus/makefiles": "^0.13.3"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "wyrihaximus": {
@@ -468,7 +458,7 @@
             "description": "Contracts for OpenAPI Tools",
             "support": {
                 "issues": "https://github.com/php-openapi-tools/contract/issues",
-                "source": "https://github.com/php-openapi-tools/contract/tree/main"
+                "source": "https://github.com/php-openapi-tools/contract/tree/0.1.0"
             },
             "funding": [
                 {
@@ -476,33 +466,32 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-08-03T17:55:52+00:00"
+            "time": "2026-08-24T15:40:16+00:00"
         },
         {
             "name": "openapi-tools/representation",
-            "version": "dev-main",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-openapi-tools/representation.git",
-                "reference": "a320cbfac31e386a60cae4ab7a7e17bb2960b0c9"
+                "reference": "ff1eff7fbd01d7fb802e5685fd9ada5484a8f1f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-openapi-tools/representation/zipball/a320cbfac31e386a60cae4ab7a7e17bb2960b0c9",
-                "reference": "a320cbfac31e386a60cae4ab7a7e17bb2960b0c9",
+                "url": "https://api.github.com/repos/php-openapi-tools/representation/zipball/ff1eff7fbd01d7fb802e5685fd9ada5484a8f1f9",
+                "reference": "ff1eff7fbd01d7fb802e5685fd9ada5484a8f1f9",
                 "shasum": ""
             },
             "require": {
                 "devizzent/cebe-php-openapi": "^1",
                 "nikic/php-parser": "^5.8",
-                "openapi-tools/utils": "dev-main",
+                "openapi-tools/utils": "^0.1.0",
                 "php": "^8.4"
             },
             "require-dev": {
                 "wyrihaximus/async-test-utilities": "^13.5.0",
                 "wyrihaximus/makefiles": "^0.13.3"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -522,7 +511,7 @@
             "description": "User friendly OpenAPI Spec representation",
             "support": {
                 "issues": "https://github.com/php-openapi-tools/representation/issues",
-                "source": "https://github.com/php-openapi-tools/representation/tree/main"
+                "source": "https://github.com/php-openapi-tools/representation/tree/0.1.0"
             },
             "funding": [
                 {
@@ -530,20 +519,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-08-03T15:18:51+00:00"
+            "time": "2026-08-24T15:20:45+00:00"
         },
         {
             "name": "openapi-tools/utils",
-            "version": "dev-main",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-openapi-tools/utils.git",
-                "reference": "e73e56b1951408d7c25269a312bceeac0f8d8a17"
+                "reference": "4319f0ab40b73e2a19c382e1e7b0c428b834f9f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-openapi-tools/utils/zipball/e73e56b1951408d7c25269a312bceeac0f8d8a17",
-                "reference": "e73e56b1951408d7c25269a312bceeac0f8d8a17",
+                "url": "https://api.github.com/repos/php-openapi-tools/utils/zipball/4319f0ab40b73e2a19c382e1e7b0c428b834f9f1",
+                "reference": "4319f0ab40b73e2a19c382e1e7b0c428b834f9f1",
                 "shasum": ""
             },
             "require": {
@@ -556,7 +545,6 @@
                 "wyrihaximus/async-test-utilities": "^13.5.0",
                 "wyrihaximus/makefiles": "^0.13.3"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -576,7 +564,7 @@
             "description": "Utils for OpenAPI Tools",
             "support": {
                 "issues": "https://github.com/php-openapi-tools/utils/issues",
-                "source": "https://github.com/php-openapi-tools/utils/tree/main"
+                "source": "https://github.com/php-openapi-tools/utils/tree/0.1.0"
             },
             "funding": [
                 {
@@ -584,7 +572,60 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-08-03T14:47:34+00:00"
+            "time": "2026-08-24T05:41:26+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
+            },
+            "time": "2023-04-04T09:54:51+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -671,16 +712,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v8.1.2",
+            "version": "v8.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "faabdbe998e8c5c599dceffa27aa265b185c0736"
+                "reference": "b3fc9e8888eeb9daddc33bfbd15d282a61f543cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/faabdbe998e8c5c599dceffa27aa265b185c0736",
-                "reference": "faabdbe998e8c5c599dceffa27aa265b185c0736",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b3fc9e8888eeb9daddc33bfbd15d282a61f543cd",
+                "reference": "b3fc9e8888eeb9daddc33bfbd15d282a61f543cd",
                 "shasum": ""
             },
             "require": {
@@ -723,7 +764,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v8.1.2"
+                "source": "https://github.com/symfony/yaml/tree/v8.1.5"
             },
             "funding": [
                 {
@@ -743,7 +784,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-22T15:42:13+00:00"
+            "time": "2026-08-21T12:16:08+00:00"
         }
     ],
     "packages-dev": [
@@ -10205,11 +10246,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "openapi-tools/contract": 20,
-        "openapi-tools/representation": 20,
-        "openapi-tools/utils": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
