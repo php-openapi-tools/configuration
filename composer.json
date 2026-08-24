@@ -12,9 +12,9 @@
         "php": "^8.4",
         "eventsauce/object-hydrator": "^1.8.0",
         "jawira/case-converter": "^3.6.0",
-        "openapi-tools/contract": "dev-main",
-        "openapi-tools/representation": "dev-main",
-        "openapi-tools/utils": "dev-main"
+        "openapi-tools/contract": "^0.1.0",
+        "openapi-tools/representation": "^0.1.0",
+        "openapi-tools/utils": "^0.1.0"
     },
     "require-dev": {
         "wyrihaximus/async-test-utilities": "^13.5.1",
